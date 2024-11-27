@@ -18,25 +18,25 @@ public class Main {
     Scanner input = new Scanner(System.in);
 
         System.out.println("pls enter each specific corresponding number: "
-                + "\n 1.Maximum and Minimum Element Finder "
-                + "\n 2.Frequency Counter "
+                + "\n 1.Sum and Average of an Array "
+                + "\n 2.Maximum and Minimum Element Finder "
                 + "\n 3.Reverse an Array "
-                + "\n 4.Sum and Average of an Array" );
+                + "\n 4.Frequency Array" );
 
         int response = input.nextInt();
 
         switch (response) {
             case 1:
-                findMaxAndMin(input);
+                calculateSumAndAverage(input);
                 break;
             case 2:
-                countFrequency(input);
+                findMaxAndMin(input);
                 break;
             case 3:
                 reverseArray(input);
                 break;
             case 4:
-                calculateSumAndAverage(input);
+                countFrequency(input);
                 break;
             default:
                 System.out.println("Invalid option");
